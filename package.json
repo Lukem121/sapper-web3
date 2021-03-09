@@ -1,12 +1,12 @@
 {
-  "name": "svelte-web3",
+  "name": "sapper-web3",
   "version": "1.2.9",
   "description": "web3.js as a Svelte store",
   "module": "dist/index.mjs",
   "svelte": "dist/index.mjs",
   "main": "dist/index.js",
   "license": "MIT",
-  "repository": "clbrge/svelte-web3",
+  "repository": "lukem121/sapper-web3",
   "author": {
     "name": "Christophe Le Bars",
     "email": "<clb@rouge.network>"
@@ -45,7 +45,7 @@
     "access": "public"
   },
   "keywords": [
-    "svelte",
+    "sapper",
     "ethereum",
     "web3",
     "store"
