@@ -2,7 +2,7 @@
 
 # Sapper-Web3 🌟
 
-web3.js 1.2.9 as a Svelte store that can be used in sapper.
+web3.js as a Svelte store that can be used in sapper.
 
 ## Installation
 
