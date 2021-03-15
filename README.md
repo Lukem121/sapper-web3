@@ -20,11 +20,10 @@ Include web3 in your template.html file
 ```js
 <script>
 	import { onMount } from 'svelte';
-
 	let ethStore;
 	let web3;
 	let selectedAccount;
-  let connected;
+	let connected;
 	
 	onMount(async () => {
 		const module = await import('sapper-web3');
@@ -35,7 +34,7 @@ Include web3 in your template.html file
 	});
 
 	const enableBrowser = async () => {
-    await ethStore.setBrowserProvider();
+		await ethStore.setBrowserProvider();
   }
 </script>
 
