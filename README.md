@@ -23,7 +23,7 @@ Include web3 in your template.html file
 
 	let ethStore;
 	let web3;
-  let selectedAccount;
+	let selectedAccount;
   let connected;
 	
 	onMount(async () => {
