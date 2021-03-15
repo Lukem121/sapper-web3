@@ -1,7 +1,5 @@
 
-// rollup fails to bundle current source web3
-// import Web3 from 'web3'
-import Web3 from 'web3/dist/web3.js'
+let Web3 = window.Web3;
 
 import { derived, writable } from 'svelte/store'
 
