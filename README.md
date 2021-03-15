@@ -71,11 +71,5 @@ $web3.eth.getBalance(<Ethereum address>)
 
 Svelte stores are automatically updated when network or the selected account change.
 
-Please see the file `example/App.svelte` for more usage information to start a transaction
+Please see the file `example/index.svelte` for more usage information to start a transaction
 and concrete usage of stores.
-
-## Demo/Example
-
-```bash
-npm run example
-```
