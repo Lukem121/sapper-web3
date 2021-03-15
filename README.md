@@ -35,9 +35,10 @@ Include web3 in your template.html file
 
 	const enableBrowser = async () => {
 		await ethStore.setBrowserProvider();
-  }
+	}
 </script>
 
+<h2>{$selectedAccount}</h2>
 <button on:click={enableBrowser}>Enable Browser</button>
 ```
 
