@@ -2,12 +2,17 @@
 
 # svelte-web3
 
-web3.js 1.2.9 as a Svelte store.
+web3.js 1.2.9 as a Svelte store that can be used in sapper.
 
 ## Installation
 
 ```bash
-npm i svelte-web3
+npm i sapper-web3
+```
+
+Include web3 in your template.html file
+```bash
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
 ```
 
 ## Basic Usage
@@ -15,7 +20,7 @@ npm i svelte-web3
 Import the `ethStore` main connection helper and needed derived Svelte stores (see list below):
 
 ```js
-import { ethStore, web3, selectedAccount, connected } from 'svelte-web3';
+import { ethStore, web3, selectedAccount, connected } from 'sapper-web3';
 ```
 
 To enable connection to the current window provider: 
