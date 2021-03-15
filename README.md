@@ -17,10 +17,29 @@ Include web3 in your template.html file
 
 ## Basic Usage
 
-Import the `ethStore` main connection helper and needed derived Svelte stores (see list below):
-
 ```js
-import { ethStore, web3, selectedAccount, connected } from 'sapper-web3';
+<script>
+	import { onMount } from 'svelte';
+
+	let ethStore;
+	let web3;
+  let selectedAccount;
+  let connected;
+	
+	onMount(async () => {
+		const module = await import('sapper-web3');
+		ethStore = module.ethStore;
+		web3 = module.web3;
+		selectedAccount = module.selectedAccount;
+		connected = module.connected;
+	});
+
+	const enableBrowser = async () => {
+    await ethStore.setBrowserProvider();
+  }
+</script>
+
+<button on:click={enableBrowser}>Enable Browser</button>
 ```
 
 To enable connection to the current window provider: 
